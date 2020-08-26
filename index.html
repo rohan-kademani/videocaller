@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      background: #E44D26;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #F16529, #E44D26);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #F16529, #E44D26);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      margin: 0;
+      font-family: monospace;
+    }
+
+    #localVideo,
+    #remoteVideo {
+      width: 100%;
+      background: whitesmoke;
+      background: url(https://media1.tenor.com/images/a388b52cb0b98b71066ce08b9fcc21c5/tenor.gif?itemid=5435835);
+      background-repeat: no-repeat;
+      border: 5px solid white;
+      background-size: cover;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      text-align: center;
+      font-size: 4em;
+      font-family: monospace;
+
+    }
+
+    .important {
+      border: 1px solid black;
+      font-size: 30px;
+      text-align: center;
+      padding: 20px;
+      margin: 30px;
+      background-color: black;
+      color: whitesmoke;
+
+    }
+
+    @media(min-width: 600px) {
+
+      #localVideo,
+      #remoteVideo {
+        width: 50%;
+        background: url(https://media1.tenor.com/images/a388b52cb0b98b71066ce08b9fcc21c5/tenor.gif?itemid=5435835);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: nowrap;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="logo">Videocaller</div>
+
+  <div class="container">
+    <video id="localVideo" autoplay muted></video>
+    <video id="remoteVideo" autoplay></video>
+  </div>
+  <div class="important"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
