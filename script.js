@@ -120,6 +120,6 @@ function localDescCreated(desc) {
 x.innerHTML = "ROOM ID : " + roomHash;
 function connect() {
   console.log(roomkey.value)
-  window.location.replace("file:///C:/Users/ROHAN/Downloads/webrtc-master/webrtc-master/index.html#" + roomkey.value)
+  window.location.replace("https://rohan-kademani.github.io/videocaller/" + roomkey.value)
 
 }
